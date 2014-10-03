@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="mainApp">
+<head>
+    <title>உலகத் தமிழ்க் கழகம்/International Tamil Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="product" content="Metro UI CSS Framework">
+    <meta name="description" content="Simple responsive css framework">
+    <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
+   
+
+</head>
+<body class="metro">
+    <div data-ng-include="'app/layout/shell.html'"></div>
+    <div style="display:none;" class="nav_up" id="nav_up"><i class="icon-arrow-up"></i></div>
+    <div style="display:none;" class="nav_down" id="nav_down"><i class="icon-arrow-down"></i></div>
+    
+    <!-- Load JavaScript Libraries -->
+    <!-- Vendor Scripts-->
+    <script src="js/jquery/jquery-2.1.1.js"></script>
+    <script src="scripts/jquery-ui-1.10.4.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    
+    <!-- Bootstrapping-->
+    <script src="app/mainApp.js"></script>
+    <script src="app/config.route.js"></script>
+    
+    <!-- app -->
+    <script src="app/layout/SideNavBarController.js"></script>
+    <script src="app/home/HomeController.js"></script>
+    <script src="app/aboutus/AboutUsController.js"></script>
+    <script src="app/academics/AcademicsController.js"></script>
+    <script src="app/academics/WordsController.js"></script>
+    <script src="app/registration/RegistrationController.js"></script>
+    <script src="app/schools/SchoolsController.js"></script>    
+    <!--<script src="js/scroll-startstop.events.jquery.js"></script>-->
+</body>
+
+</html>
