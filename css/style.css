@@ -1,0 +1,186 @@
+﻿.nav_up {
+    padding: 9px;
+    background-color: #FFFFFF;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#73ADC0), to(#FFFFFF)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #FFFFFF -moz-linear-gradient(top, #73ADC0, #FFFFFF) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#73ADC0, endColorstr=#FFFFFF) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#73ADC0, endColorstr=#73ADC0)" no-repeat;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    position: fixed;
+    background-position: 50% 50%;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    opacity: 0.7;
+    left: 30px;
+    white-space: nowrap;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+.nav_down {
+    padding: 9px;
+    background-color: #FFFFFF;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#73ADC0), to(#FFFFFF)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #FFFFFF -moz-linear-gradient(top, #73ADC0, #FFFFFF) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#73ADC0, endColorstr=#FFFFFF) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#73ADC0, endColorstr=#73ADC0)" no-repeat;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    position: fixed;
+    background-position: 50% 50%;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    opacity: 0.7;
+    left: 70px;
+    white-space: nowrap;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+.nav_up > i {
+    font-size: 20px;
+    color: #0094ff;
+}
+
+.nav_down > i {
+    font-size: 20px;
+    color: #0094ff;
+}
+
+th {
+    background-color: #243A69;
+    color: white;
+    padding: 1px 0px 0px 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #C8DBF0;
+}
+
+tr:nth-child(odd) {
+    background-color: #ACBFDF;
+}
+
+tr.notatable:nth-child(odd)  tr.calendar1:nth-child(odd) {
+    background-color: #ACBFDF;
+}
+
+tr.notatable:nth-child(even) tr.calendar1:nth-child(even){
+    background-color: #C8DBF0;
+}
+
+tr.calendar1 > td {
+    white-space: nowrap;
+    padding: 1px 0px 0px 5px;
+    text-align: center;
+}
+td {
+    white-space: nowrap;
+    padding: 1px 0px 0px 5px;
+}
+
+.tabwhi { background-color: white;}
+.tdwhi { color: darkblue;}
+.site-headbar {
+    height: 96px;
+    background: url('/images/layout1_02.gif') repeat-x;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.site-headbar > div {
+    display: inline-block;
+    display: -moz-inline-stack;
+    vertical-align: top;
+    *display: inline;
+    _height: 96px;
+}
+.site-headbar-logo {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/images/tha_logo.gif') no-repeat;
+}
+
+.site-headbar-cta-text {
+    width: 416px;
+    height: 96px;
+    margin-left: 20px;
+    background: url('/images/text.gif') no-repeat;
+}
+
+.site-headbar-kids {
+    width: 301px;
+    height: 96px;
+    background: url('/images/ctaq_4_03.gif') no-repeat;
+}
+
+.site-headbar-small-logo {
+    width: 75px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('/images/logo.gif') no-repeat;
+}
+
+.nice-transition {
+    -webkit-transition: all 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.site-headbar-login {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+@media screen and (min-width: 1170px) {
+    .site-headbar-cta-text {
+        margin-left: 275px;
+    }
+
+    .site-headbar-kids {
+        margin-right: 55px;
+    }
+
+    .site-headbar-login {        
+        margin-top: 74px;
+    }
+}
+/*@media screen and (min-width: 1171px) and (max-width: 1920px) {
+    .site-headbar-cta-text {
+        margin-left: 300px;
+    }
+
+    .site-headbar-kids {
+        margin-right: 55px;
+    }
+
+    .site-headbar-login {        
+        margin-top: 74px;
+    }
+}*/
+/* the media query within our project, copy just the first selector */
+@media screen and (max-width: 894px) {
+    /* no need to copy the one below */
+    .site-headbar {
+        width: 894px;
+    }
+}
+

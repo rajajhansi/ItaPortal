@@ -1,0 +1,12 @@
+﻿<div class="span3">
+    <nav class="sidebar light">
+        <ul data-ng-controller="SideNavBarController as vm">
+            <li data-ng-repeat="menuItem in vm.menuItems" data-ng-class="vm.getClass('{{menuItem.url}}')">
+                <a href="{{ '#' + menuItem.url}}">
+                    <i class="{{menuItem.icon}}"></i>
+                    <div class="tamil">{{menuItem.tamilText}}</div><div>{{menuItem.text}}</div>
+                </a>
+            </li>           
+        </ul>
+    </nav>
+</div>
