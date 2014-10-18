@@ -53,6 +53,14 @@
                 }
             },
             {
+                url: '/countries',
+                config: {
+                    controller: 'CountriesController',
+                    controllerAs: 'vm',
+                    templateUrl: 'app/countries/countries.html'
+                }
+            },
+            {
                 url: '/schools',
                 config: {
                     templateUrl: 'app/schools/schools.html'
@@ -86,6 +94,14 @@
                 url: '/tva',
                 config: {
                     templateUrl: 'app/tva/tva.html'
+                }
+            },
+            {
+                url: '/countries/:country',
+                config: {
+                    templateUrl: 'app/countries/countriesshell.html',
+                    controller: 'CountriesController',
+                    controllerAs: 'vm'
                 }
             },
             {
