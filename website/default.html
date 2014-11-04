@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title>உலகத் தமிழ்க் கழகம்/International Tamil Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +7,315 @@
     <meta name="description" content="Simple responsive css framework">
     <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
 
-    <link href="css/metro-bootstrap.css" rel="stylesheet">
-    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/iconFont.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">-->
+    <!--<link hre="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.css" rel="stylesheet">-->
+
+    <link href="css/cosmo-bootstrap.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link hre="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.css" rel="stylesheet">-->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!--<link href="js/prettify/prettify.css" rel="stylesheet">-->
     <!-- Load JavaScript Libraries -->
     <script src="js/jquery/jquery-2.1.1.js"></script>
     <script src="scripts/jquery-ui-1.10.4.js"></script>
+    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+
     <!--<script src="js/jquery/jquery.widget.min.js"></script>
     <script src="js/jquery/jquery.mousewheel.js"></script>
     <script src="js/prettify/prettify.js"></script>-->
 
 </head>
-    <body class="metro">
-        <div class="container-fluid" id="main_container">
-            <div class="grid fluid">
-                <div class="row no-margin">
-                    <!--<div class="clearfix visible-md visible-lg">
-                            <div class="span12 bg-ctablue">
-                                <div class="span1">
-                                    <img src="/images/tha_logo.gif" alt="" />
-                                </div>                                                                                  
-                                <div class="span8 offset2">
-                                    <img src="/images/italogo.jpg" alt="" />
-                                </div>
-                                <div class="span1">
-                                    <img src="/images/tha_logo.gif" alt="" />
-                                </div> 
-                            </div>
-                        </div>-->
-                    <div class="site-headbar">
-                        <div class="site-headbar-logo"></div>
-                        <div class="site-headbar-cta-text nice-transition"></div>
-                        <div class="site-headbar-small-logo"></div>
-                        <div class="site-headbar-kids nice-transition"></div>
-                        <div class="site-headbar-login"><a class="button mini primary" onclick="window.open('http://www.catamilacademy.org/cta');">Members Login</a></div>
+<body>
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button> <a class="navbar-brand" href="#">ITA</a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-info">Search</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="#signInModal" role="button" data-toggle="modal">
+                            Sign In
+                        </a>
+                        <!--<a href="#" data-toggle="modal" data-target="#myModal">Sign In</a>-->
+
+                    </li>
+
+                    <li>
+                        <a href="#signUpModal" role="button" data-toggle="modal">
+                            Sign Up
+                        </a>
+                        <!--<a href="#" data-toggle="modal" data-target="#myModal">Sign In</a>-->
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guest <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu profile-dropdown" role="menu">
+                            <li>
+                                <a href="#">My Profile</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Account</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Sign Out</a>
+
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Links</a>
+
+                            </li>
+                            <li class="dropdown-profile-pic">
+
+
+
+                                <a href="#" class="dropdown-profile-pic-btn">Change photo</a>
+                                <img src="http://i.imgur.com/j7RcYQW.png" alt="" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+
+
+    <!-- Carousel-->
+    <div class="col-md-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-bottom:10px;-webkit-box-shadow: -3px 10px 22px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 10px 22px -7px rgba(0,0,0,0.75);
+box-shadow: -3px 10px 22px -7px rgba(0,0,0,0.75);">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://cdn.qiibo.com/wp-content/uploads/2013/03/galaxy-wallpaper-background-40801-hd-wallpapers-2.jpg" width="100%" height="200px" alt="...">
+                    <div class="carousel-caption">
+                        ...
                     </div>
                 </div>
-                <div class="row">
-                    <div class="span3">
-                        <nav class="sidebar light">
-                            <ul>
-                                <li class="active stick"><a class="inplace" href="partials/home.html"><i class="icon-home"></i><div class="tamil">முகப்பு</div><div>Home</div></a></li>
-                                <li class=""><a class="inplace" href="partials/aboutus.html"><i class="icon-info"></i><div class="tamil">எங்களைப் பற்றி</div><div>About Us</div></a></li>
-                                <li class=""><a class="inplace" href="partials/board.html"><i class="icon-user-3"></i><div class="tamil">நிர்வாகம்</div><i class="icon-user-3"></i>Board</a></li>
-                                <li class=""><a class="inplace" href="partials/academics.html"><i class="icon-book"></i><div class="tamil">கல்வித்திட்டம்</div><i class="icon-book"></i>Academics</a></li>                                
-                                <li class=""><a class="inplace" href="partials/registration.html"><i class="icon-pencil"></i><div class="tamil">பதிவு</div><i class="icon-pencil icon-file"></i>Registration</a></li>
-                                <li class=""><a class="inplace" href="partials/branches.html"><i class="icon-location"></i><div class="tamil">பள்ளிகள்</div><i class="icon-location"></i>Schools</a></li>
-                                <li class=""><a class="inplace" href="partials/contacts.html"><i class="icon-mail"></i><div class="tamil">தொடர்பு கொள்ள</div><i class="icon-mail"></i>Contact Us</a></li>
-                                <li class=""><a class="inplace" href="partials/resources.html"><i class="icon-link"></i><div class="tamil">வெளி இணைப்புகள்</div><i class="icon-link"></i>External Links</a></li>
-                                <li class=""><a class="inplace" href="partials/BarathidasanCourses.html"><i class="icon-cabinet"></i><div class="tamil">பாரதிதாசன் பல்கலைக்கழகம்</div><i class="icon-cabinet"></i>Bharathidasan University</a></li>
-                                <li class=""><a class="inplace" href="partials/berkuniv.html"><i class="icon-cabinet"></i><div class="tamil">பெர்க்லி பல்கலைக்கழகம்</div><i class="icon-cabinet"></i>Berkeley University</a></li>
-                                <li class=""><a class="inplace" href="partials/tuv.html"><i class="icon-cabinet"></i><div class="tamil">தமிழிணையப் பல்கலைக்கழகம்</div><i class="icon-cabinet"></i>Tamil Virtual University</a></li>
-                            </ul>
-                        </nav>
+                <div class="item">
+                    <img src="http://www.cyclesoles.com/wp-content/uploads/2013/10/hd-wallpapers-mountain-bike-desktop-biking-wallpaper-tricks-1920x1080-wallpaper-1000x400.jpg" width="100%" alt="...">
+                    <div class="carousel-caption">
+                        ...
                     </div>
-                    <div id="content" class="span8">
-                       
+                </div>
+                <div class="item">
+                    <img src="http://www.cyclesoles.com/wp-content/uploads/2013/10/bicycle-hd-for-and-85908-1000x400.jpg" width="100%" alt="...">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="fa  fa-chevron-left glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="fa fa-chevron-right glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Sign In-->
+
+    <div id="signInModal" class="omb_login modal fade" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="omb_authTitle">
+                        Sign In Or <a href="#signUpModal" role="button" data-toggle="modal" data-dismiss="modal">
+                            Sign Up
+                        </a>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row  omb_socialButtons">
+                        <div class="col-xs-4 col-sm-3">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                                <i class="fa fa-facebook"></i>
+                                <span class="hidden-xs">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+                                <i class="fa fa-twitter"></i>
+                                <span class="hidden-xs">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="hidden-xs">Google+</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-microsoft">
+                                <i class="fa fa-windows"></i>
+                                <span class="hidden-xs">Microsoft</span>
+                            </a>
+                        </div>
                     </div>
 
+                    <div class="row omb_row-sm-offset-1 omb_loginOr">
+                        <div class="col-xs-10 col-sm-12">
+                            <hr class="omb_hrOr">
+                            <span class="omb_spanOr">or</span>
+                        </div>
+                    </div>
+
+                    <div class="row omb_row-sm-offset-1">
+                        <div class="col-xs-12 col-sm-12">
+                            <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" name="username" placeholder="email address">
+                                </div>
+                                <span class="help-block"></span>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                </div>
+                                <span class="help-block"></span>
+
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <span class="help-block"></span>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="col-xs-1 visible-xs"></div>
+                            <div class="form-group">
+                                <label class="checkbox" style="margin-left:20px">
+                                    <input type="checkbox" value="remember-me" />Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group pull-right">
+
+                                <p class="omb_forgotPwd">
+                                    <a href="#">Forgot password?</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="display:none;" class="nav_up" id="nav_up"><i class="icon-arrow-up"></i></div>
-        <div style="display:none;" class="nav_down" id="nav_down"><i class="icon-arrow-down"></i></div>
-        <script src="js/ItaModule.js"></script>
-        <script src="js/scroll-startstop.events.jquery.js"></script>
-    </body>
-    
+    </div>
+
+
+    <div id="signUpModal" class="omb_login modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="omb_authTitle">
+                        Please Sign Up for ITA Or <a href="#signInModal" role="button" data-toggle="modal" data-dismiss="modal">
+                            Sign In
+                        </a>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="help-block"></span>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                    <input type="text" class="form-control" name="username" placeholder="email address">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="help-block"></span>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Confirm Password">
+                                </div>
+
+                            </div>
+                        </div>
+                        <span class="help-block"></span>
+                        <input type="submit" value="Register" class="btn btn-primary btn-block">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>

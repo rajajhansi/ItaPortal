@@ -2,10 +2,11 @@
     'use strict';
 
     var controllerId = 'AboutUsController';
+    angular
+        .module('mainApp').
+        controller(controllerId, AboutUsController);
 
-    // TODO: replace app with your module name
-    angular.module('mainApp').controller(controllerId,
-        ['$scope', '$routeParams', AboutUsController]);
+    AboutUsController.$inject = ['$scope', '$routeParams'];
 
     function AboutUsController($scope, $routeParams) {
         var vm = this;

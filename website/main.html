@@ -11,18 +11,21 @@
     <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
     <link href="css/iconFont.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">    
-   
-
+    <script src="js/jquery/jquery-2.1.1.js"></script>
+    <script src="scripts/jquery-ui-1.10.4.js"></script>
+    <script src="js/metro.min.js"></script>    
 </head>
 <body class="metro">
     <div data-ng-include="'app/layout/shell.html'"></div>
     <div style="display:none;" class="nav_up" id="nav_up"><i class="icon-arrow-up"></i></div>
     <div style="display:none;" class="nav_down" id="nav_down"><i class="icon-arrow-down"></i></div>
 
+    <script>
+    $.Metro.initDropdowns();
+    </script>
+
     <!-- Load JavaScript Libraries -->
-    <!-- Vendor Scripts-->
-    <script src="js/jquery/jquery-2.1.1.js"></script>
-    <script src="scripts/jquery-ui-1.10.4.js"></script>
+    <!-- Vendor Scripts-->    
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/angular-animate.js"></script>
